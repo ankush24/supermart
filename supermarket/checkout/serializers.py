@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Product, Discount, CartItem
+from checkout.models import Product, Discount, CartItem
 
 class ProductSerializer(serializers.ModelSerializer):
     class Meta:

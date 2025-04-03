@@ -9,7 +9,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 @admin.register(Discount)
 class DiscountAdmin(admin.ModelAdmin):
-    list_display = ("product", "discount_quantity", "discount_price")
+    list_display = ("product", "min_discount_quantity", "discount_price")
 
 @admin.register(CartItem)
 class CartItemAdmin(admin.ModelAdmin):
