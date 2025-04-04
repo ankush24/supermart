@@ -14,3 +14,7 @@ class DiscountAdmin(admin.ModelAdmin):
 @admin.register(CartItem)
 class CartItemAdmin(admin.ModelAdmin):
     list_display = ("product", "quantity")
+    readonly_fields = ("product", "quantity")
+    
+    def has_add_permission(self, request):
+        return False
