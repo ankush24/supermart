@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Product, Discount, CartItem
+from checkout.models import Product, Discount, CartItem
 
 
 # Register your models here.
